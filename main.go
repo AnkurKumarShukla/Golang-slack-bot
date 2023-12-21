@@ -22,8 +22,8 @@ for event:= range analyticsChannel{
 }
 
 func main(){
-	os.Setenv("SLACK_BOT_TOKEN","xoxb-2505861133808-6371763367030-NqWGFv1x5uzOgzBbBrCRY9oK")
-	os.Setenv("SLACK_APP_TOKEN","xapp-1-A06AXM8QMKQ-6378254731635-f041ea8b3181e4f5ef081c7d7a85a6dfaf1f0972957264b8ce27feee9d625aa3")
+	os.Setenv("SLACK_BOT_TOKEN","xoxb-*****************************************************")
+	os.Setenv("SLACK_APP_TOKEN","xapp-1-***************************************************")
 bot:=slacker.NewClient(os.Getenv("SLACK_BOT_TOKEN"),os.Getenv("SLACK_APP_TOKEN"))
 go printcommandevent(bot.CommandEvents())
 bot.Command("ping",&slacker.CommandDefinition{
